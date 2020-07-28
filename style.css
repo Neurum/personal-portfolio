@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 55px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #008073;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-item {
+  padding: 0 1.5rem;
+}
+.section-1 {
+  height: 100vh;
+  background-image: url(images/code-background-dark.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.wrapper {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 50%);
+  color: lightgray;
+  text-align: center;
+}
+
+#about:hover {
+  color: #008073;
+}
+
+#tech:hover {
+  color: #00bcd4;
+}
+
+#projects:hover {
+  color: #f44336;
+}
+
+#contact:hover {
+  color: #795548;
+}
+
+#resume:hover {
+  color: #3f51b5;
+}
+
+.fas,
+.fab {
+  padding: 0 5px;
+}
+
+.logo {
+  margin: 10px;
+  font-size: 2rem;
+  color: #343a40;
+  margin-top: 50px;
+}
+
+#contact-section a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #343a40;
+}
+
+#contact-section a:hover {
+  color: #008073;
+}
+.section-header {
+  height: 56px;
+  background-color: #008073;
+  position: relative;
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-tag {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+  font-family: 'Cinzel', serif;
+}
+.section-main {
+  width: 80%;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-me-header {
+  font-size: 2.5rem;
+  margin: 5% 0;
+  padding: 10px 2%;
+  border-left: 5px solid #795548;
+}
+
+.about-p {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  margin: 20px 0 5%;
+  letter-spacing: 0.1rem;
+}
+.img-style {
+  border-radius: 9px;
+  -webkit-box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  margin: 5% 0;
+}
+
+#front-end,
+#back-end,
+#tools {
+  border-radius: 9px;
+  -webkit-box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 5px 46px -6px rgba(0, 0, 0, 0.45);
+  margin: 5% 0;
+}
+
+#html,
+#express,
+#mongo {
+  width: 125px;
+  height: 125px;
+}
+
+#post {
+  width: 150px;
+  height: 125px;
+}
+
+#css,
+#js,
+#bs,
+#twcss,
+#react,
+#sass,
+#node,
+#python,
+#django,
+#git,
+#github,
+#npm,
+#webpack,
+#babel,
+#heroku {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 19px;
+}
+
+.card-img {
+  text-align: center;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 286px;
+  height: 257px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #008073;
+  color: lightgray;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back ul li {
+  list-style: none;
+}
+
+.container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.col-hidden {
+  display: none;
+}
+
+#contact-section {
+  height: 100vh;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
