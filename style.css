@@ -10,7 +10,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.75rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -56,7 +56,7 @@ img {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 50%);
-  color: lightgray;
+  color: whitesmoke;
   text-align: center;
 }
 
@@ -105,14 +105,14 @@ img {
   height: 56px;
   background-color: #008073;
   position: relative;
-  color: lightgray;
+  color: whitesmoke;
   font-family: 'Raleway', sans-serif;
 }
 
 .header-tag {
   position: absolute;
   top: 17%;
-  left: 2%;
+  left: 16.5%;
   font-family: 'Cinzel', serif;
 }
 .section-main {
@@ -122,14 +122,22 @@ img {
 }
 
 .about-me-header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 5% 0;
   padding: 10px 2%;
   border-left: 5px solid #795548;
 }
 
+.about-section-main {
+  width: 66%;
+}
+
+.contact-section-main {
+  width: 68.5%;
+}
+
 .about-p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   margin: 20px 0 5%;
   letter-spacing: 0.1rem;
@@ -249,6 +257,27 @@ img {
 
 .to-top {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 2%;
+  right: 2%;
+}
+
+#contact-form {
+  margin-left: 1.1%;
+  margin-top: 3%;
+  width: 50%;
+}
+
+.contact-header {
+  margin-left: 1.1%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-form {
+    width: 100%;
+  }
+
+  .about-p {
+    font-size: 0.75rem;
+  }
 }

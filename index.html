@@ -22,54 +22,56 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-column fixed-top">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-column fixed-top">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a href="#about-section" class="nav-link" id="about">
-              <i class="fas fa-user fab"></i>
-              <span class="link-text">About</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#tech-section" class="nav-link" id="tech">
-              <i class="fas fa-database"></i>
-              <span class="link-text">Technologies</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects-section" class="nav-link" id="projects">
-              <i class="fas fa-laptop-code"></i>
-              <span class="link-text">Projects</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-section" class="nav-link" id="contact">
-              <i class="fas fa-envelope"></i>
-              <span class="link-text">Contact</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume-section" class="nav-link" id="resume">
-              <i class="fas fa-file-alt"></i>
-              <span class="link-text">Resume</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#tech-section" class="nav-link" id="tech">
+                <i class="fas fa-database"></i>
+                <span class="link-text">Technologies</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link" id="projects">
+                <i class="fas fa-laptop-code"></i>
+                <span class="link-text">Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link" id="about">
+                <i class="fas fa-user fab"></i>
+                <span class="link-text">About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link" id="contact">
+                <i class="fas fa-envelope"></i>
+                <span class="link-text">Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link" id="resume">
+                <i class="fas fa-file-alt"></i>
+                <span class="link-text">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <!-- Main website content -->
     <main>
@@ -79,27 +81,7 @@
           <h3 class="intro-text">Full Stack Developer</h3>
         </div>
       </section>
-      <section id="about-section">
-        <div class="hidden"></div>
 
-        <div class="section-header">
-          <h2 class="header-tag">About</h2>
-        </div>
-        <div class="section-main">
-          <h3 class="about-me-header">
-            Focused and driven full stack web developer with a passion for creating exceptional websites and applications
-          </h3>
-          <p class="about-p">
-            I have always enjoyed a challenge and have always rose to the occasion. My path to web development was not what would be called easy or
-            traditional. My career path has ranged from various different professions, all of which have contributed to my desire to work hard.
-            Solving problems is part of my DNA and is where I excel.
-          </p>
-          <p class="about-p">
-            As a web developer I have found that my skills that I have acquired throughout life are able to be put to their best use. My attention to
-            detail, problem-solving nature, and strong work ethic have created a passion in me that makes each day exciting.
-          </p>
-        </div>
-      </section>
       <section id="tech-section">
         <div class="hidden"></div>
 
@@ -131,7 +113,7 @@
               </div>
               <div class="row">
                 <div class="card-body back-end">
-                  <div class="col-md-2 card-img py-2"><img id="node" src="images/nodejs-seeklogo.com.svg" /> Node.js</div>
+                  <div class="col-md-2 card-img py-3"><img id="node" src="images/node-node-js-seeklogo.com.svg" /> Node.js</div>
                   <div class="col-md-2 card-img"><img id="express" src="images/express-js-seeklogo.com.svg" /> Express.js</div>
                   <div class="col-md-2 card-img"><img id="mongo" src="images/mongodb-seeklogo.com.svg" /> MongoDB</div>
                   <div class="col-md-2 card-img"><img id="post" src="images/postgresql-seeklogo.com.svg" /> postgreSQL</div>
@@ -213,26 +195,49 @@
           </div>
         </div>
       </section>
+      <section id="about-section">
+        <div class="hidden"></div>
+
+        <div class="section-header">
+          <h2 class="header-tag">About</h2>
+        </div>
+        <div class="section-main about-section-main">
+          <h3 class="about-me-header">
+            Focused and driven full stack web developer with a passion for creating exceptional websites and applications
+          </h3>
+          <p class="about-p">
+            I have always enjoyed a challenge and have always risen to the occasion. My path to web development was not what would be called easy or
+            traditional. My career path has ranged from various different professions, all of which have contributed to my desire to work hard.
+            Solving problems is part of my DNA and is where I excel.
+          </p>
+          <p class="about-p">
+            As a web developer I have found that my skills that I have acquired throughout life are able to be put to their best use. My attention to
+            detail, problem-solving nature, and strong work ethic have created a passion in me that makes each day exciting.
+          </p>
+        </div>
+      </section>
       <section id="contact-section">
         <div class="hidden"></div>
 
         <div class="section-header">
           <h2 class="header-tag">Contact</h2>
         </div>
-        <div class="section-main">
+        <div class="section-main contact-section-main">
           <div>
-            <i class="fas fa-envelope logo"></i>
-            <a href="mailto:fullstackwebdev78@gmail.com">fullstackwebdev78@gmail.com</a>
-          </div>
+            <h3 class="contact-header">If you would like to know more . . .</h3>
+            <form action="https://formspree.io/mlepaqqp" method="POST" id="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="_replyto" id="" aria-describedby="emailHelp" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="textarea" rows="3" placeholder="Message"></textarea>
+              </div>
 
-          <div>
-            <i class="fab fa-github logo"></i>
-            <a href="http://github.com/Neurum">github.com/Neurum</a>
-          </div>
-
-          <div>
-            <i class="fab fa-linkedin logo"></i>
-            <a href="http://https://www.linkedin.com/in/curthouse-web-dev/">linkedin.com/in/curthouse-web-dev</a>
+              <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
         <a href="#intro-section">
