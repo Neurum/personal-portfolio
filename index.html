@@ -171,16 +171,27 @@
                 </div>
               </div>
 
-              <div class="col col-md-4 col-hidden">
-                <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col col-md-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner card" style="width: 18rem;">
+                    <div class="flip-card-front">
+                      <img src="images/prize-picker-site.png" class="card-img-top" alt="..." />
+                    </div>
+
+                    <div class="flip-card-back">
+                      <h3>Technology Used</h3>
+                      <ul>
+                        <li>HTML5</li>
+                        <li>CSS5</li>
+                        <li>Bootstrap 4</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <a href="https://neurum.github.io/Prize-Picker/" class="btn btn-primary">Visit Site</a>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="col col-md-4 col-hidden">
                 <div class="card" style="width: 18rem;">
                   <img src="..." class="card-img-top" alt="..." />
@@ -225,17 +236,18 @@
         <div class="section-main contact-section-main">
           <div>
             <h3 class="contact-header">If you would like to know more . . .</h3>
-            <form action="https://formspree.io/mlepaqqp" method="POST" id="contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" name="name" id="name" placeholder="Name" />
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="_replyto" id="" aria-describedby="emailHelp" placeholder="Email" />
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="textarea" rows="3" placeholder="Message"></textarea>
-              </div>
-
+            <form action="https://formspree.io/mlepaqqp" method="POST" id="contact-form fs-frm">
+              <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="_replyto" id="" aria-describedby="emailHelp" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="textarea" rows="3" placeholder="Message"></textarea>
+                </div>
+              </fieldset>
               <button type="submit" value="Send" class="btn btn-primary">Submit</button>
             </form>
           </div>

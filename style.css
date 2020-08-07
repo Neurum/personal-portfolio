@@ -236,6 +236,7 @@ img {
   background-color: #008073;
   color: lightgray;
   transform: rotateY(180deg);
+  padding-top: 10%;
 }
 
 .flip-card-back ul li {
@@ -280,4 +281,13 @@ img {
   .about-p {
     font-size: 0.75rem;
   }
+}
+
+.btn {
+  background-color: #343a40;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #008073;
 }
